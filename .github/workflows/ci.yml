@@ -33,7 +33,7 @@ jobs:
     - uses: coursier/setup-action@v1.2.0-M3
       with:
         jvm: temurin:17
-    - name: Release
+    - name: Publish
       run: ./scala-cli publish . --cross
       env:
         PUBLISH_USER: ${{ secrets.PUBLISH_USER }}
